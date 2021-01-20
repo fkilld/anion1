@@ -127,3 +127,5 @@ CKEDITOR_CONFIGS = {
         'toolbar': 'full',
     },
 }
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
