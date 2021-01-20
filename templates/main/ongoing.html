@@ -1,0 +1,1091 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="Html, Css, java, python,best class in raipur for python, full stack developer salary in india,accenture full stack web developer salary,cooding classes,python classes,full stack developer course,
+    full stack developer,what is full stack developer,ull stack developer meaning,java full stack developer,full stack developer salary,software developer,software developer salary,it courses,
+    frfront end developeront end developer,front end developer skills,front end developer jobs,graphic design,graphic design courses,
+    programming languages,top programming languages,web development company,web development courses,web development services,python web development
+    ">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+
+    <link href="{% static 'css/ongoing.css' %}" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/logo/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/logo/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/logo/favicon-16x16.png' %}">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Ongoing Recruitments</title>
+    <style>
+
+
+        @media all and (min-width: 992px) {
+            .navbar .nav-item .dropdown-menu {
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                transition: .3s;
+                margin-top: 0;
+            }
+
+            .navbar .nav-item:hover .nav-link {
+                color: #fff;
+            }
+
+            .navbar .dropdown-menu.fade-down {
+                top: 80%;
+                transform: rotateX(-75deg);
+                transform-origin: 0% 0%;
+            }
+
+            .navbar .dropdown-menu.fade-up {
+                top: 180%;
+            }
+
+            .navbar .nav-item:hover .dropdown-menu {
+                transition: .3s;
+                opacity: 1;
+                visibility: visible;
+                top: 60px;
+                transform: rotateX(0deg);
+            }
+        }
+
+        .dropdown-menu {
+
+            background: rgba(0, 0, 0, 0.9);
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="fixed-top">
+    <nav class="navbar navbar-expand-lg nav Style">
+        <a class="brand-navbar" href="{% url 'index' %}"><img alt="Responsive image" height="60px"
+                                                              src="{% static 'img/logo.jpg' %}"></a>
+        <button class="navbar-toggler" data-target="#mainMenu" data-toggle="collapse">
+            <span><i class="fas fa-align-right iconStyle"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto navList">
+                <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}"><i class="fas fa-home"></i>HOME<span
+                        class="sr-only">(current)</span></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}"><i class="fas fa-users"></i>Who We Are</a>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i
+                            class="fas fa-cogs"></i>Services</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="{% url 'software_deve' %}">Software Development</a></li>
+                        <li><a class="dropdown-item" href="{% url 'tap' %}">Training and Placement</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Digital_Marketing' %}">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" href="{% url 'full_stack' %}">Full Stack Development with
+                            Crampete</a>
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'training' %}">Campus Recruitment Crash
+                            Courses</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Recruitments' %}">Recruitment</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{% url 'Courses' %}"><i
+                            class="fas fa-atom"></i>Courses</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="{% url 'full_stack_developers' %}">Full Stack Developers</a>
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'Data_science' %}">Data science</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Digital_Market' %}">Digital Market</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Crash_Course' %}">Crash Course</a></li>
+                        <!-- <li><a class="dropdown-item" href="{% url 'Aptitude_Reasoning' %}">Aptitude Reasoning</a></li>
+                        <li><a class="dropdown-item" href=" {% url 'Profile_Preparation' %} ">Profile Preparation</a></li> -->
+                        <!-- <li><a class="dropdown-item" href="{% url 'CV_Building' %} ">CV Building</a></li> -->
+                        <li><a class="dropdown-item" href="{% url 'Mock_Interviews' %} ">Mock Interviews</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="{% url 'ongoing' %}"><i class="fas fa-user-tie"></i>Ongoing
+                        Recruitments</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'clients' %}"><i class="fas fa-briefcase"></i>Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}"><i class="fas fa-phone"></i>Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" href="#"><i
+                            class="fas fa-cogs"></i>More</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="#">Pay Online</a></li>
+                        <li><a class="dropdown-item" href="#">Book Online</a></li>
+                        <!-- <li><a class="dropdown-item" href="Digital-Marketing.html">Digital Marketing</a></li> -->
+
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<section style="background-color:white;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="text">
+
+                    <p style="font-size:40px;">Ongoing Recruitments</p><br>
+                    <p style="font-size:20px">Join Our Family of IT-holics</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div style="margin-top:10%;">
+
+                    <img src="{% static 'img\4202883.jpg' %}" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<!-- <section style="margin-top: 10%">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+                <div class="text-center">
+                    <h1 style="color:white">Ongoing Recruitments</h1><br>
+
+                    <h4 style="color:white">Join Our Family of IT-holics</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+{% for Tap_model in Tap_models %}
+<section style="margin-top: 10%;">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">
+                <div class="content-box">
+
+                    {{Tap_model.job_description | safe }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+
+<section style="margin-top:5%">
+
+</section>
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Hyderabad, Telangana<br>-->
+
+<!--                        ₹34,08,386 a year - Temporarily remote</h4>-->
+
+<!--                    <ul class="margin1">-->
+
+<!--                        <li> Should be able to work independently and team as well.</li>-->
+
+<!--                        <li> Knowledge of multiple back-end languages and JavaScript frameworks (e.g. Angular,-->
+<!--                            Node.js)-->
+<!--                        </li>-->
+
+<!--                        <li> Familiarity with databases (e.g. MySQL, MongoDB), Firebase, web servers (e.g. Apache) and-->
+<!--                            UI/UX design-->
+<!--                        </li>-->
+
+<!--                        <li> Knowledge of multiple front-end languages and libraries (e.g. HTML/ CSS, JavaScript, XML,-->
+<!--                            jQuery)-->
+<!--                        </li>-->
+
+<!--                        <li> Excellent communication and teamwork skills.</li>-->
+
+<!--                        <li> Strong experience with Angular - JS is required.</li>-->
+
+<!--                        <li> Freshers with knowledge on angular-js are also preferred.</li>-->
+<!--                    </ul>-->
+
+<!--                    <h4 class="margin1">Job Type: Full-time<br>-->
+
+<!--                        Salary: Up to ₹3,408,386.00 per year<br>-->
+
+<!--                        Schedule:</h4><br>-->
+<!--                    <ul class="margin1">-->
+<!--                        <li>Monday to Friday</li>-->
+<!--                    </ul>-->
+
+<!--                    <h4 class="margin1">Experience:</h4>-->
+<!--                    <ul class="margin1">-->
+<!--                        <li> Node.js: 1 year (Preferred)</li>-->
+
+<!--                        <li>total work: 1 year (Preferred)</li>-->
+
+<!--                        <li>Angular js: 1 year (Preferred)</li>-->
+
+<!--                        <li> Angular / Node JS: 1 year (Preferred)</li>-->
+<!--                    </ul>-->
+<!--                    <br>-->
+<!--                    <h4 class="margin1">Education:</h4>-->
+<!--                    <br>-->
+<!--                    <ul class="margin1">-->
+<!--                        <li> Bachelor's (Preferred)</li>-->
+<!--                    </ul>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section style="margin-top:5%">-->
+
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Software Developer freshers</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">IT Department</h4>-->
+
+<!--                    <br>-->
+<!--                    <ul>-->
+
+<!--                        <p>Looking for Software Developer freshers who completed courses in 2018- 2020.</p>-->
+
+<!--                        <p>Knowledge and interest in computer systems and the latest technologies</p>-->
+
+<!--                        <p>The ability to learn new technologies quickly An analytical mind</p>-->
+
+<!--                        <p>The ability to communicate complex procedures to other colleagues</p>-->
+
+<!--                        <h4>Requirements –</h4>-->
+
+<!--                        <p>Knowledge in- Postgres, Scraper, AWS, SQL server, Mean stack, MVC .NET MySql Database Role :-->
+<!--                            Software Developer</p>-->
+
+<!--                        <h4>Employment : Full Time</h4>-->
+
+<!--                        <p>Qualification: - BE/Btech/MCA/Mtech/Msc/Mcs/ Bcs/BCA</p>-->
+
+<!--                        <h4>Experience : 0-1 Year</h4>-->
+
+<!--                    </ul>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Jr. PHP Developer</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">IT Department</h4>-->
+
+<!--                    <br>-->
+<!--                    <h5 class="margin1">50 K - 80 Indore</h5>-->
+<!--                    <h5 class="margin1">Job Description-->
+<!--                        Openings:3-->
+<!--                        Functional Area:Engineering-->
+<!--                        Industry Type:IT-Software-Software Services-->
+<!--                        Keywords:PHP Developer</h5>-->
+<!--                    <br>-->
+<!--                    <p class="margin1">A PHP developer is responsible for writing server-side web application logic. PHP-->
+<!--                        developers usually develop back-end components, connect the application with the other (often-->
+<!--                        third-party) web services, and support the front-end developers by integrating their work with-->
+<!--                        the application.-->
+<!--                        Desired Candidate Profile-->
+<!--                        Profile DescriptionThe candidate must have taken training in PHP or shall have adequate-->
+<!--                        knowledge about this language.-->
+<!--                        Under Graduate QualificationBE / B.Tech (Computer Science, Information Technology)-->
+<!--                        *Note: Candidate should have a UG qualification</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Trainee - Software Engineer</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">IT Department</h4>-->
+
+<!--                    <br>-->
+<!--                    <h4 class="margin1" class="margin1">Job Description</h4>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Functional Area:IT</h4><br>-->
+
+<!--                    <h4 class="margin1">Industry Type:IT-Software-Software Services</h4><br>-->
+
+<!--                    <h4 class="margin1">Desired Candidate Profile</h4>-->
+
+<!--                    <p class="margin1">Profile Description candidates who have basic knowledge of C, C++, Java, .Net,-->
+<!--                        Node.JS or any other programming languages. We will be assigning a technology to each selected-->
+<!--                        candidate in one of the domain chosen by Finoit e.g. .NET, Java, Node.js, LAMP (PHP/Python),-->
+<!--                        Angular, Android, iOS, and other Open Source Technologies etc.</p><br>-->
+
+<!--                    <h1 class="heading"> Designation: Trainee - Software Engineer.</h1><br>-->
+
+
+<!--                    <h4 class="margin1">Qualification: Under Graduate</h4><br>-->
+<!--                    <p class="margin1">BE / B.Tech (Computer Science, Electronics, and Communication, Information-->
+<!--                        Technology) Graduation, the passing year 2019/2020-->
+
+<!--                        Under Graduate QualificationBE / B.Tech (Computer Science, Electronics and Communication,-->
+<!--                        Information science, Information Technology)Minimum Marks 60% Graduation in 2020,2019-->
+
+<!--                        *Note: Candidate should have a UG qualification</p>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Software Developer Trainee</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">IT Department</h4>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Bengaluru, Karnataka<br>-->
+
+<!--                        ₹1,47,115 - ₹4,70,343 a year</h4><br>-->
+<!--                    <h4 class="margin1">Job description</h4>-->
+<!--                    <p class="margin1">2018 / 2019 / 2020 passed out BE(Computer Science) / B.E(IT) ( or ) relevant-->
+<!--                        degree<br>-->
+<!--                        Work Location : Coimbatore<br>-->
+<!--                        Others: Good communication, willing to learn as per the changing technology trends<br>-->
+<!--                        Experience : 0 to 1 years<br>-->
+<!--                        Desired Candidate Profile</p><br>-->
+
+<!--                    <ul class="margin1">-->
+<!--                        <li>Bachelor's degree in computer science or related degree</li>-->
+
+<!--                        <li>-->
+<!--                        <li>0-6 months of experience</li>-->
+
+<!--                        <li>Good analytical background</li>-->
+
+<!--                        <li> Knowledge of the software development life cycle</li>-->
+
+<!--                        <li> The desire to work in fast-paced environment</li>-->
+
+<!--                        <li>Good Communication</li>-->
+
+<!--                    </ul>-->
+
+<!--                    <h4 class="margin1">Job Types: Full-time, Fresher<br>-->
+
+<!--                        Salary: ₹147,115.00 - ₹470,343.00 per year</h4><br>-->
+
+<!--                    <h4 class="margin1">Schedule:</h4>-->
+<!--                    <ul class="margin1">-->
+<!--                        <li>Monday to Friday</li>-->
+<!--                    </ul>-->
+<!--                    <h4 class="margin1">Supplemental Pay:</h4><br>-->
+<!--                    <ul class="margin1">-->
+<!--                        <li> Yearly bonus</li>-->
+<!--                    </ul>-->
+<!--                    <h4 class="margin1">Experience:</h4><br>-->
+<!--                    <ul class="margin1">-->
+<!--                        <li>work: 1 year (Preferred)</li>-->
+
+<!--                        <li>total work: 1 year (Preferred)</li>-->
+<!--                    </ul>-->
+<!--                    <h4 class="margin1">Education:</h4><br>-->
+<!--                    <ul class="margin1">-->
+<!--                        <li> Bachelor's (Preferred)</li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Development Internship</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Software Department</h4>-->
+
+<!--                    <br>-->
+<!--                    <h4 class="margin1">Chandigarh, Chandigarh-->
+
+<!--                        ₹20,000 - ₹25,000 a month</h4>-->
+
+<!--                    <br>-->
+<!--                    <h4 class="margin1">-->
+<!--                        Who can apply:<br>-->
+
+<!--                        Only those students or freshers can apply who:-->
+<!--                    </h4><br>-->
+
+<!--                    <ul class="margin1">-->
+<!--                        <li>are available for full time (in-office) internship</li>-->
+
+<!--                        <li>have relevant skills and interests</li>-->
+
+<!--                        <li>can start the internship between 17th Dec'20 and 21st Jan'21</li>-->
+
+<!--                        <li>are available for duration of 6 months</li>-->
+
+<!--                        <li>have already graduated or are currently in any year of study</li>-->
+
+<!--                        <li>Females willing to start/restart their career may also apply</li>-->
+
+<!--                    </ul>-->
+<!--                    <br>-->
+<!--                    <h4 class="margin1">-->
+<!--                        Number of internships/jobs available: 2<br>-->
+
+<!--                        Categories: Computer Science,Full Stack Development,Engineering,Web Development-->
+
+<!--                    </h4>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Software Engineer</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Software Department</h4>-->
+
+<!--                    <br>-->
+<!--                    <p>-->
+<!--                    <p class="margin1">Jaipur, Rajasthan</p>-->
+
+<!--                    <p class="margin1">Temporarily remote</p>-->
+
+<!--                    <p class="margin1">₹10,000 - ₹25,000 a month</p>-->
+
+<!--                    <p class="margin1">Looking for a few freshers for Associate Software Engineer positions who are-->
+<!--                        dedicated to working, having a positive attitude, and good knowledge over any programming-->
+<!--                        languages like PHP, C, C++, Java, Python, MySql, etc.</p>-->
+
+<!--                    <p class="margin1">Responsibilities and Duties:</p>-->
+
+<!--                    <ul class="margin1">-->
+<!--                        <li>Develop and implement new software programs-->
+
+<!--                        <li>Maintain and improve the performance of existing software</li>-->
+
+<!--                        <li>Clearly and regularly communicate with management and technical support colleagues</li>-->
+
+<!--                        <li>Design and update software database</li>-->
+
+<!--                        <li>Test and maintain software products to ensure strong functionality and optimization</li>-->
+
+<!--                        <li>Recommend improvements to existing software programs as necessary</li>-->
+<!--                    </ul>-->
+<!--                    <h4 class="margin1">Key Skills:</h4>-->
+
+<!--                    <p class="margin1">C, C++, Python, Java, MySQL, Javascript, JQuery, SDLC, OOPS, CSS, HTML</p>-->
+
+<!--                    <p class="margin1">Required Experience and Qualifications</p>-->
+
+<!--                    <ul class="margin1">-->
+<!--                        <li> Good knowledge of Programming concept</li>-->
+
+<!--                        <li>Good Analytical and Problem-solving skills</li>-->
+
+<!--                        <li>Ability to learn new technologies and use them appropriately. Must be a quick learner.</li>-->
+
+<!--                        <li>The candidate is required to be proficient in at least one of the following languages – PHP,-->
+<!--                            Python, C++, Java.-->
+<!--                        </li>-->
+
+<!--                        <li>Good knowledge of web technologies, such as HTML, CSS and Javascript</li>-->
+
+<!--                        <li>Good Knowledge of MySQL or SQL Server</li>-->
+
+<!--                        <li>Good Knowledge of the SDLC</li>-->
+
+<!--                        <li>Excellent analytical and problem-solving skills</li>-->
+
+<!--                        <li>Good knowledge of OOPS concept and best practices</li>-->
+
+<!--                        <li>Should have good communication skills</li>-->
+
+<!--                        <li>Strong attention to detail</li>-->
+
+<!--                        <li>Flexible and willing to accept a change in priorities as necessary</li>-->
+
+<!--                        <li>Ability to work independently and multi-task effectively Benefits</li>-->
+
+<!--                        <li>Immense learning and growth opportunities</li>-->
+
+<!--                        <li>Opportunity to work on multiple technologies</li>-->
+
+<!--                        <li>Excellent mentoring and leadership support</li>-->
+
+<!--                        <li>5 days work a week</li>-->
+<!--                    </ul>-->
+<!--                    <h4 class="margin1">Job Type: Full-time</h4><br>-->
+<!--                    <h4 class="margin1">-->
+<!--                        <ul class="margin1">-->
+<!--                            <li>Salary: ₹10000.00 - ₹25000.00 per year</li>-->
+
+<!--                            <li>Work Remotely:</li>-->
+
+<!--                        </ul>-->
+<!--                    </h4>-->
+<!--                    <ul class="margin1">-->
+<!--                        <li> Temporarily due to COVID-19<br>-->
+
+<!--                            Job Types: Full-time, Internship, Fresher<br>-->
+
+<!--                            Salary: ₹10,000.00 - ₹25,000.00 per month-->
+<!--                        </li>-->
+<!--                    </ul>-->
+
+<!--                    <h4 class="margin1">Benefits:</h4>-->
+<!--                    <ul class="margin1">-->
+<!--                        <li>Paid sick time</li>-->
+
+<!--                        <li>Paid time off</li>-->
+<!--                    </ul>-->
+
+<!--                    <h4 class="margin1"> Schedule:</h4>-->
+<!--                    <ul class="margin1">-->
+
+<!--                        <li>Day shift</li>-->
+
+<!--                        <li>Flexible shift</li>-->
+
+<!--                        <li>Monday to Friday</li>-->
+<!--                    </ul>-->
+<!--                    <h4 class="margin1">Supplemental Pay:</h4>-->
+<!--                    <ul class="margin1">-->
+<!--                        <li>Performance bonus</li>-->
+
+<!--                        <li>Yearly bonus</li>-->
+
+<!--                    </ul>-->
+
+
+<!--                    <h4 class="margin1">Experience:</h4>-->
+<!--                    <ul class="margin1">-->
+<!--                        <li>.Net: 1 year (Preferred)</li>-->
+
+<!--                        <li>total work: 1 year (Preferred)</li>-->
+
+<!--                        <li>Java: 1 year (Preferred)</li>-->
+
+<!--                        <li>c#: 1 year (Preferred)</li>-->
+<!--                    </ul>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!--<section style="margin-top: 10%">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">-->
+<!--                <div class="content-box">-->
+<!--                    <h1 class="heading">Full Stack Web Developer | Angular JS | Node.js</h1>-->
+
+<!--                    <br>-->
+
+<!--                    <h4 class="margin1">Operations Department</h4>-->
+
+<!--                    <br>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<section style="margin-top:5%">
+
+</section>
+
+
+<section class="demo-footer">
+
+    <footer>
+
+        <div class="container-fluid" style="background-color:rgba(0, 0, 0, 0.7)">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 ">
+                    <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 " style="margin-top:70px;">
+
+
+                        <img src="{% static 'img/logo.jpg' %}" width="250">
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 class="top-margin" style="color:white;margin-top: 4%">Contact</h2>
+                    <hr class="hr-tag" style="height:2px;border-width:0;color:gray;background-color:white;">
+                    <div class="">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text" style="text-align:center; color: white;">First Floor, House Board Commercial<br>Complex, Maulshri Vihar, Near VIP Road, Raipur (C.G.)- 492006</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text" style="text-align:center; color: white;">07714041616</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text" style="text-align:center; color: white;">info@anionstech.com</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 style="color:white;margin-top: 4%"
+                        style="height:2px;border-width:0;color:gray;background-color:white;">Opening Hours</h2>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:white;">
+                    <p style="color: white"> Monday to Saturday - 10am to 7pm</p>
+
+                    <p style="color: white">Sunday - Closed</p>
+
+
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 style="color:white;margin-top: 4%">Map</h2>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:white;">
+                    <div class="content">
+
+                        <iframe allowfullscreen=""
+                                aria-hidden="false" frameborder="0" height="auto"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.7810682577572!2d81.69984930586462!3d21.20954632009619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c33030e9b60f%3A0x84d09e54f1b37a21!2sAnion%20Softech%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1609041632180!5m2!1sen!2sin"
+                                style="border:0;"
+                                tabindex="0" width="auto"></iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="contaiter" style="background-color:black">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="social">
+                            <a href="https://www.facebook.com/AnionStech/"><p class="social-font"><span
+                                    class="fab fa-facebook-square"></span></p></a>
+                            <a href="https://linkedin.com/in/anion-softech-2707081a2"><p class="social-font"><span
+                                    class="fab fa-linkedin"></span></p></a>
+                            <a href="https://instagram.com/anion_softech?igshid=110myfr4rra4i"><p class="social-font">
+                                <span class="fab fa-instagram"></span></p></a>
+                            <a href="https://youtube.com/channel/UCRTBQGAlBv1cNUaODhxx-4A"><p class="social-font"><span
+                                    class="fab fa-youtube"></span></p></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 demo21">
+                        <h6 style="color: white;margin-top:5%;margin-left:50%;">@ 2020 Anion Softech .All Rights
+                            Reserved.</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+</section>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

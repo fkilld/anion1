@@ -1,0 +1,193 @@
+   body
+{
+    background-color:#020231;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+.navbar
+{
+    background-color:black;
+}
+.navbar .brand-navbar img:hover
+{
+    opacity: 0.7;
+}
+.navbar ul
+{
+padding: 0px 30px 0px 0px;
+}
+
+.navbar ul li.active > a {
+    
+    border-left: 3px solid #1e00b0 !important;
+    
+}
+
+
+.navbar ul li a{
+    color: white;
+    margin: 10px 0px 0px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.navbar ul li a .fas{
+    padding-right:5px; 
+    padding-left:5px; 
+}
+.navbar ul li a:hover{
+    color:blue;
+}
+.navbar ul li.active > a {
+    color: blue;
+    font-weight: bold;
+    font-size: 12px;
+    border-left: 3px solid blue;
+    border-radius: 40px;
+}
+.iconStyle
+{
+    color:blue;
+}
+ 
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:60px; transform: rotateX(0deg); }
+}		
+      .dropdown-menu {
+   
+    background: rgba(0, 0, 0, 0.9);
+      
+          }
+
+<-----------footer-------------->
+
+.social
+{
+    padding: 2%;
+}
+.social-font
+{
+    
+    font-size: 30px;
+    float: left;
+    margin-top:2%;
+    margin-left:15px;
+}
+<----------footer-----------------.
+
+
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.vertical-tab{ display: table; }
+.vertical-tab .nav-tabs{
+   display: table-cell;
+   width: 28%;
+   min-width: 28%;
+   border: none;
+   position: relative;
+}
+.vertical-tab .nav-tabs li{
+   float: none;
+   vertical-align: top;
+}
+ 
+.vertical-tab .nav-tabs li a{
+    display: block;
+    padding: 10px 20px;
+    margin: 0 3px 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #b3b3b3;
+    transform: perspective(400px) rotateY(-40deg);
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+}
+.vertical-tab .nav-tabs li:last-child a{ margin-bottom: 0; }
+.vertical-tab .nav-tabs li a:hover,
+.vertical-tab .nav-tabs li.active a,
+.vertical-tab .nav-tabs li.active a:hover{
+    color: #fff;
+    background: rgb(3, 56, 117);
+    border:none;
+    box-shadow: 0 2px 2px rgba(3, 56, 117, 0.5);
+    transform: perspective(400px) rotateY(0deg);
+}
+.vertical-tab .tab-content{
+   display: table-cell;
+   padding: 10px 20px;
+   background: #ec3169;
+   border: 4px dashed #fff;
+   vertical-align: top;
+   font-size: 15px;
+   color: #fff;
+   line-height: 27px;
+   letter-spacing: 1px;
+   margin-top: 10px;
+}
+.vertical-tab .tab-content h3{
+    font-size: 24px;
+    margin: 0 0 5px 0;
+}
+@media only screen and (max-width: 479px){
+    .vertical-tab .nav-tabs{
+        display: block;
+        width: 100%;
+        border-right: none;
+    }
+    
+    @media only screen and (max-width: 770px){
+    .vertical-tab .nav-tabs{
+        display: block;
+        width: 100%;
+        border-right: none;
+    }
+    .vertical-tab .nav-tabs li{ margin: 0 0 10px 0; }
+    .vertical-tab .nav-tabs li:last-child{ margin: 0; }
+    .vertical-tab .nav-tabs li a{
+        padding: 10px;
+        margin: 0;
+        transform: perspective(800px) rotateY(-40deg);
+    }
+    .vertical-tab .tab-content{
+        display: block;
+        padding: 20px 15px 5px;
+        border-radius: 0 0 10px 10px;
+    }
+    .vertical-tab .tab-content h3{ font-size: 18px; }
+}
+ @media only screen and (max-width: 770px){
+    .demo{
+        padding-top: 30%;
+    }
+    
+
+    @media only screen and (max-width: 770px){
+        .demo21{
+            display:none;
+        }}
+        
+        @media only screen and (max-width: 770px){
+            .social{
+                margin-top: 15px;
+                margin-left:60px;
+            }
+        }
+
+        @media only screen and (max-width: 770px){
+            .demo-footer{
+                text-align: center;
+                
+            }}

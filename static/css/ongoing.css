@@ -1,0 +1,126 @@
+body
+{
+     background-color:#020231; 
+    font-family: 'Work Sans', sans-serif;
+}
+.content-box
+{
+    border: 1px solid black;
+    background-color:white;
+    
+    
+}
+.heading
+{
+    text-align: center; 
+}
+.margin1
+{
+    margin-left: 5%;
+}
+
+.text
+{
+    color:#1e00b0;
+    font-family: 'DM Serif Display', serif;
+    font-weight:700;
+    padding-top:20%;
+    padding-left:20%;
+}
+/* <---------------------nav bar start---------------------> */
+   .navbar {
+   
+    background-color: black;
+}       
+.navbar
+{
+    background-color:black;
+}
+.navbar .brand-navbar img:hover
+{
+    opacity: 0.7;
+}
+.navbar ul
+{
+padding: 0px 30px 0px 0px;
+}
+.navbar ul li.active > a {
+    
+    border-left: 3px solid #1e00b0 !important;
+    
+}
+
+
+.navbar ul li a{
+    color: white;
+    margin: 10px 0px 0px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.navbar ul li a .fas{
+    padding-right:5px; 
+    padding-left:5px; 
+}
+.navbar ul li a:hover{
+    color:blue;
+}
+.navbar ul li.active > a {
+    color:blue;
+    font-weight: bold;
+    font-size: 12px;
+    border-left: 3px solid #1e00b0;
+    border-radius: 40px;
+}
+.iconStyle
+{
+    color:#1e00b0;
+}
+
+
+
+/* <----------------------nav bar end----------> */
+
+
+    .box
+    {
+        border: 1px solid black;
+        background-color:red;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    /*-----------footer start--------------*/
+
+.social
+{
+    padding: 2%;
+}
+.social-font
+{
+    
+    font-size: 30px;
+    float: left;
+    margin-top:2%;
+    margin-left:15px;
+
+}
+    @media only screen and (max-width: 770px){
+        .demo21{
+            display:none;
+        }}
+        
+        @media only screen and (max-width: 770px){
+            .social{
+                margin-top: 15px;
+                margin-left:60px;
+            }
+        }
+    
+        @media only screen and (max-width: 770px){
+            .demo-footer{
+                text-align: center;
+                
+            }}
+}
+/*----------footer end-----------------.*/

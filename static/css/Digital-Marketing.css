@@ -1,0 +1,466 @@
+body {
+    background-color: #020231;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.pos {
+    color: white;
+}
+
+
+
+/* ---------------------nav bar start--------------------- > */
+.navbar {
+
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar .brand-navbar img:hover {
+    opacity: 0.7;
+}
+
+.navbar ul {
+    padding: 0px 30px 0px 0px;
+}
+
+.navbar ul li.active > a {
+
+    border-left: 3px solid #1e00b0 !important;
+
+}
+
+
+.navbar ul li a {
+    color: white;
+    margin: 10px 0px 0px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.navbar ul li a .fas {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.navbar ul li a:hover {
+    color: blue;
+}
+
+.navbar ul li.active > a {
+    color: blue;
+    font-weight: bold;
+    font-size: 12px;
+    border-left: 3px solid #15b000;
+    border-radius: 40px;
+}
+
+.iconStyle {
+    color: blue;
+}
+
+
+
+/* ----------------------nav bar end---------- > */
+.main-timeline8 {
+    overflow: hidden;
+    position: relative
+}
+
+.main-timeline8:after, .main-timeline8:before {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both
+}
+
+.main-timeline8:before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #d6d5d5;
+    position: absolute;
+    top: 30px;
+    left: 50%
+}
+
+.main-timeline8 .timeline {
+    width: 50%;
+    float: left;
+    padding-right: 30px;
+    position: relative
+}
+
+.main-timeline8 .timeline-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #fe6847;
+    position: absolute;
+    top: 5.5%;
+    right: -17.5px
+}
+
+.main-timeline8 .year {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 0 50px 50px 0;
+    background: #fe6847;
+    text-align: center;
+    position: relative
+}
+
+.main-timeline8 .year:before {
+    content: "";
+    border-top: 35px solid #f59c8b;
+    border-left: 35px solid transparent;
+    position: absolute;
+    bottom: -35px;
+    left: 0
+}
+
+.main-timeline8 .timeline-content {
+    padding: 30px 20px;
+    margin: 0 45px 0 35px;
+    background: #f2f2f2
+}
+
+.main-timeline8 .title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #504f54;
+    margin: 0 0 10px
+}
+
+.main-timeline8 .description {
+    font-size: 18px;
+    color: black;
+    margin: 0;
+    text-align: justify;
+}
+
+.main-timeline8 .timeline:nth-child(2n) {
+    padding: 0 0 0 30px
+}
+
+.main-timeline8 .timeline:nth-child(2n) .timeline-icon {
+    right: auto;
+    left: -14.5px
+}
+
+.main-timeline8 .timeline:nth-child(2n) .year {
+    border-radius: 50px 0 0 50px;
+    background: #009933
+}
+
+.main-timeline8 .timeline:nth-child(2n) .year:before {
+    border-left: none;
+    border-right: 35px solid transparent;
+    left: auto;
+    right: 0
+}
+
+.main-timeline8 .timeline:nth-child(2n) .timeline-content {
+    text-align: right;
+    margin: 0 35px 0 45px
+}
+
+.main-timeline8 .timeline:nth-child(2) {
+    margin-top: 170px
+}
+
+.main-timeline8 .timeline:nth-child(odd) {
+    margin: -175px 0 0
+}
+
+.main-timeline8 .timeline:nth-child(even) {
+    margin-bottom: 80px
+}
+
+.main-timeline8 .timeline:first-child, .main-timeline8 .timeline:last-child:nth-child(even) {
+    margin: 0
+}
+
+.main-timeline8 .timeline:nth-child(2n) .timeline-icon {
+    border-color: #009933
+}
+
+.main-timeline8 .timeline:nth-child(2n) .year:before {
+    border-top-color: #009933
+}
+
+.main-timeline8 .timeline:nth-child(3n) .timeline-icon {
+    border-color: #0000ff
+}
+
+.main-timeline8 .timeline:nth-child(3n) .year {
+    background: #0000ff
+}
+
+.main-timeline8 .timeline:nth-child(3n) .year:before {
+    border-top-color: #0000ff
+}
+
+.main-timeline8 .timeline:nth-child(4n) .timeline-icon {
+    border-color: #ff0066
+}
+
+.main-timeline8 .timeline:nth-child(4n) .year {
+    background: #ff0066
+}
+
+.main-timeline8 .timeline:nth-child(4n) .year:before {
+    border-top-color: #ff0066
+}
+
+.main-timeline8 .timeline:nth-child(5n) .timeline-icon {
+    border-color: #00997a
+}
+
+.main-timeline8 .timeline:nth-child(5n) .year {
+    background: #00997a
+}
+
+.main-timeline8 .timeline:nth-child(5n) .year:before {
+    border-top-color: #00997a
+}
+
+.main-timeline8 .timeline:nth-child(6n) .timeline-icon {
+    border-color: #ff9900
+}
+
+.main-timeline8 .timeline:nth-child(6n) .year {
+    background: #ff9900
+}
+
+.main-timeline8 .timeline:nth-child(6n) .year:before {
+    border-top-color: #ff9900
+}
+
+@media only screen and (max-width: 767px) {
+    .main-timeline8 {
+        overflow: visible
+    }
+
+    .main-timeline8:before {
+        top: 0;
+        left: 0
+    }
+
+    .main-timeline8 .timeline:nth-child(2), .main-timeline8 .timeline:nth-child(even), .main-timeline8 .timeline:nth-child(odd) {
+        margin: 0
+    }
+
+    .main-timeline8 .timeline {
+        width: 100%;
+        float: none;
+        padding: 0 0 0 30px;
+        margin-bottom: 20px !important
+    }
+
+    .main-timeline8 .timeline:last-child {
+        margin: 0 !important
+    }
+
+    .main-timeline8 .timeline-icon {
+        right: auto;
+        left: -14.5px
+    }
+
+    .main-timeline8 .year {
+        border-radius: 50px 0 0 50px
+    }
+
+    .main-timeline8 .year:before {
+        border-left: none;
+        border-right: 35px solid transparent;
+        left: auto;
+        right: 0
+    }
+
+    .main-timeline8 .timeline-content {
+        margin: 0 35px 0 45px
+    }
+}
+
+/* .banner .content {
+    position: absolute;
+   
+    bottom:125px;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 527px;
+    padding: 20px;
+    text-align: center;
+} */
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        margin-top: 0;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: #fff;
+    }
+
+    .navbar .dropdown-menu.fade-down {
+        top: 80%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+    }
+
+    .navbar .dropdown-menu.fade-up {
+        top: 180%;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transition: .3s;
+        opacity: 1;
+        visibility: visible;
+        top: 60px;
+        transform: rotateX(0deg);
+    }
+}
+
+.dropdown-menu {
+
+    background: rgba(0, 0, 0, 0.9);
+
+}
+
+/* <-----------footer-------------->*/
+.demo-footer {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.social {
+    padding: 2%;
+}
+
+.social-font {
+
+    font-size: 30px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 15px;
+}
+
+/*-------------------------*/
+@media screen and (max-width: 770px) {
+    .banner .content {
+        position: absolute;
+        top: 0px;
+
+
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
+        color: #f1f1f1;
+        width: 100%;
+        height: 50px;
+        padding: 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .img1 {
+        width: 100%;
+        height: 100%;
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .heading {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: justify;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .demo-footer {
+        margin-top: 950px;
+        text-align: center;
+    }
+}
+
+/*----------footer end-----------------*/
+@media only screen and (max-width: 770px) {
+    .demo21 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .demo11 {
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .demo-footer {
+        text-align: center;
+
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .social {
+        margin-left: 50px;
+
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .banner .content {
+        display: none;
+        position: absolute;
+        top: 0;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
+        color: #f1f1f1;
+        width: 100%;
+        height: 260px;
+        padding: 20px;
+        text-align: center;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 770px) {
+    .demo-head {
+        display: none;
+
+    }
+}
+
+.demo-head
+      {
+        display:none;
+      }
+
+      @media only screen and (max-width: 770px){
+        .demo-head{
+            display: block;
+            text-align: center;
+            color: white;
+            padding-top:20%;
+            
+        }}

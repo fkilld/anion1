@@ -1,0 +1,441 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="Html, Css, java, python,best class in raipur for python, full stack developer salary in india,accenture full stack web developer salary,cooding classes,python classes,full stack developer course,
+    full stack developer,what is full stack developer,ull stack developer meaning,java full stack developer,full stack developer salary,software developer,software developer salary,it courses,
+    frfront end developeront end developer,front end developer skills,front end developer jobs,graphic design,graphic design courses,
+    programming languages,top programming languages,web development company,web development courses,web development services,python web development
+    ">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+    <link href="{% static 'css/full-stack.css' %}" rel="stylesheet">
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/logo/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/logo/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/logo/favicon-16x16.png' %}">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Full Stack Development</title>
+
+
+</head>
+<body>
+<div class="fixed-top">
+    <nav class="navbar navbar-expand-lg nav Style">
+        <a class="brand-navbar" href="{% url 'index' %}"><img alt="Responsive image" height="60px"
+                                                              src="{% static 'img/logo.jpg' %}"></a>
+        <button class="navbar-toggler" data-target="#mainMenu" data-toggle="collapse">
+            <span><i class="fas fa-align-right iconStyle"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto navList">
+                <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}"><i class="fas fa-home"></i>HOME<span
+                        class="sr-only">(current)</span></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}"><i class="fas fa-users"></i>Who We Are</a>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" ><i
+                            class="fas fa-cogs"></i>Services</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="{% url 'software_deve' %}">Software Development</a></li>
+                        <li><a class="dropdown-item" href="{% url 'tap' %}">Training and Placement</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Digital_Marketing' %}">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" href="{% url 'full_stack' %}">Full Stack Development with
+                            Crampete</a>
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'training' %}">Campus Recruitment Crash
+                            Courses</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Recruitments' %}">Recruitment</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{% url 'Courses' %}"><i
+                            class="fas fa-atom"></i>Courses</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="{% url 'full_stack_developers' %}">Full Stack Developers</a>
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'Data_science' %}">Data science</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Digital_Market' %}">Digital Market</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Crash_Course' %}">Crash Course</a></li>
+                        <!-- <li><a class="dropdown-item" href="{% url 'Aptitude_Reasoning' %}">Aptitude Reasoning</a></li>
+                        <li><a class="dropdown-item" href=" {% url 'Profile_Preparation' %} ">Profile Preparation</a></li> -->
+                        <!-- <li><a class="dropdown-item" href="{% url 'CV_Building' %} ">CV Building</a></li> -->
+                        <li><a class="dropdown-item" href="{% url 'Mock_Interviews' %} ">Mock Interviews</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="{% url 'ongoing' %}"><i class="fas fa-user-tie"></i>Ongoing
+                        Recruitments</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'clients' %}"><i class="fas fa-briefcase"></i>Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}"><i class="fas fa-phone"></i>Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" href="#"><i
+                            class="fas fa-cogs"></i>More</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="#">Pay Online</a></li>
+                        <li><a class="dropdown-item" href="#">Book Online</a></li>
+                        <!-- <li><a class="dropdown-item" href="Digital-Marketing.html">Digital Marketing</a></li> -->
+
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<section style="margin-top:5%">
+    <div class="container-fixed">
+        <div class="banner">
+
+            <img class="img-fluid img1" src="{% static 'img/FSD.png' %}">
+            <div class="content">
+                <h1 class="pos1" style="margin-top:20%;">Full Stack Development</h1>
+                <p class="pos2" style="margin-top: 30%; margin-left:12%;">Full Stack Development</p>
+                <p class="pos1" style="margin-left: 30%; margin-right: 30%">Full stack development: It refers to the
+                    development of both front end(client side) and back end(server side) portions of web application.
+
+                    Full stack web Developers: Full stack web developers have the ability to design complete web
+                    application and websites. They work on the frontend, backend, database and debugging of web
+                    application or websites</p>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<h1 style="text-align: center; margin-top: 5%; color:white">Full Stack Development</h1>
+
+<section style="margin-top:5%">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+
+                <p class="post"
+                   data-aos="fade-up" data-aos-duration="3000">Full stack web development is the most in-demand software
+                    development job in the market. This course, designed for both students with and without coding
+                    experience, makes you a well-rounded developer, ready to be hired by top MNCs.<br><br>
+
+                    ​
+
+                    This course, designed for both students with and without experience in Full Stack Web Development,
+                    makes you a well-rounded professional.<br><br>
+
+                    ​
+
+                    Crampete is a privately held EdTech company headquartered in Singapore with offices in India,
+                    Malaysia and Singapore. Crampete is founded and managed by a team of technocrats with more than a
+                    million hour combined coding experience.<br><br>
+
+                    ​
+
+                    Crampete creates, markets and delivers in-demand tech courses to students and working professionals
+                    across the world. Our flagship programs are Full Stack Web Development and Data Science courses that
+                    are offered as instructor led live sessions through digital channels and also on-campus where
+                    students get to attend classes at our learning centres located in Singapore, Malaysia, India and
+                    Middle East currently.<br><br>
+
+                    ​
+
+                    Cram Code is an AI driven self paced learning platform that helps students and working professional
+                    to learn code by doing code anytime, anywhere.</p>
+
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6">
+
+                <img class="img-fluid" src="{% static 'img/crampete.jpg' %}">
+
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6 demo">
+
+                <button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal"
+                        data-whatever="@getbootstrap"
+                        type="button">Enquire Now
+                </button>
+
+                <button class="btn btn-primary" type="submit" value="submit"><a href="{% static 'pdf/full stack.pdf' %}"
+                                                                                style="color:white; text-decoration: none;">Download
+                    Brochure</a></button>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</section>
+
+
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog"
+     tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Register Today</h5>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="form-horizontal worldForm" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input class="form-control" name="first_name" placeholder="First Name" required
+                               type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input class="form-control" name="last_name" placeholder="Last Name" required
+                               type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control" name="email" placeholder="Email" required type="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input class="form-control" name="phone" placeholder="Phone Number"
+                               required type="telephone">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>College Pass Out Year/Fresher/School</label>
+                        <input class="form-control" name="pass_out"
+                               placeholder="College Pass Out Year/Fresher/School"
+                               type="text">
+                    </div>
+
+
+                    <!-- <div class="form-group">
+                     <label>College Pass Out Year/Fresher/School</label>
+                     <select class="form-control" id="countrySelect" size="1" onchange="makeSubmenu(this.value)">
+                     <option value="" disabled selected></option>
+                     <option>College</option>
+                     <option>School</option>
+                     <option>Experience</option>
+                     <option>Fresher</option>
+                     </select>
+                    </div>
+
+                    <div class="form-group">
+                     <label>College Pass Out Year/Fresher/School</label>
+                     <select class="form-control" id="citySelect" size="1">
+
+                     </select>
+                    </div> -->
+                    <div class="form-group">
+                        <label>Stream</label>
+
+                        <select class="form-control" name="stream">
+                            <option value="bsc">BSc</option>
+                            <option value="mba">MBA</option>
+                            <option value="mba">BE/BTech, IT</option>
+                            <option value="mba">BE/BTech Computer</option>
+                            <option value="mba">BE/BTech Civil</option>
+                            <option value="mba">BE/BTech Mechanical</option>
+                            <option value="mba">BE/BTech Electronics</option>
+                            <option value="mba">BE/BTech ENT</option>
+                            <option value="mba">BCom</option>
+                            <option value="mba">MCA</option>
+                            <option value="mba">Career Counselling</option>
+                            <option value="mba">6 to 10 std.</option>
+                            <option value="mba">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- <div class="form-group">
+                      <label>College Pass Out Year/Fresher/School</label>
+                      <select class="form-control" id="countrySelect" size="1" onchange="makeSubmenu(this.value)">
+                      <option value=""disabled selected></option>
+                      <option>Chhatisgarh</option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                      </select>
+                     </div>
+
+                     <div class="form-group">
+                      <label>College Pass Out Year/Fresher/School</label>
+                      <select class="form-control" id="citySelect" size="1">
+
+                      </select>
+                     </div>
+
+
+                  <div class="form-group">
+                      <label>City</label>
+                      <select class="form-control" name="city" id="cityList">
+                          <option value="" selected="selected">Select State</option>
+                      </select>
+                  </div>
+
+                   -->
+                    <div class="form-group">
+                        <label>City</label>
+                        <input class="form-control" name="City" placeholder="City" type="text">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Comment</label>
+                        <input class="form-control" name="Comment" placeholder="Comments..." type="text">
+                    </div>
+
+
+                    <button class="btn signup">Register Now</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="demo-footer" style="margin-top:10%;">
+
+    <footer>
+
+        <div class="container-fluid" style="background: rgba(0, 0, 0, 0.7)">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 ">
+                    <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 " style="margin-top:70px;">
+
+
+                        <img src="{% static 'img/logo.jpg' %}" width="250">
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 class="top-margin" style="color:white;margin-top: 4%">Contact</h2>
+                    <hr class="hr-tag" style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <div class="">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text" style="text-align:center; color: white;">First Floor, House Board Commercial<br>Complex, Maulshri Vihar, Near VIP Road,Raipur (C.G.) -492006</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text" style="text-align:center; color: white;">07714041616</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text" style="text-align:center; color: white;">info@anionstech.com</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 style="color:white;margin-top: 4%"
+                        style="height:2px;border-width:0;color:gray;background-color:gray">Opening Hours</h2>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <span style="color: white"> Monday to Saturday - 10am to 7pm</span>
+
+                    <span style="color: white">Sunday - Closed</span>
+
+
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 style="color:white;margin-top: 4%">Map</h2>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <div class="content">
+
+                        <iframe allowfullscreen=""
+                                aria-hidden="false" frameborder="0" height="auto"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.7810682577572!2d81.69984930586462!3d21.20954632009619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c33030e9b60f%3A0x84d09e54f1b37a21!2sAnion%20Softech%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1609041632180!5m2!1sen!2sin"
+                                style="border:0;"
+                                tabindex="0" width="auto"></iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="contaiter" style="background-color:black">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="social">
+                            <a href="https://www.facebook.com/AnionStech/"><p class="social-font"><span
+                                    class="fab fa-facebook-square"></span></p></a>
+                            <a href="https://linkedin.com/in/anion-softech-2707081a2"><p class="social-font"><span
+                                    class="fab fa-linkedin"></span></p></a>
+                            <a href="https://instagram.com/anion_softech?igshid=110myfr4rra4i"><p class="social-font">
+                                <span class="fab fa-instagram"></span></p></a>
+                            <a href="https://youtube.com/channel/UCRTBQGAlBv1cNUaODhxx-4A"><p class="social-font"><span
+                                    class="fab fa-youtube"></span></p></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 demo21">
+                        <h6 style="color: white;margin-top:5%;margin-left:50%;">@ 2020 Anion Softech .All Rights
+                            Reserved.</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+</section>
+
+<script crossorigin="anonymous"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+</body>
+</html>

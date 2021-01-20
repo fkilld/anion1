@@ -1,0 +1,444 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="Html, Css, java, python,best class in raipur for python, full stack developer salary in india,accenture full stack web developer salary,cooding classes,python classes,full stack developer course,
+    full stack developer,what is full stack developer,ull stack developer meaning,java full stack developer,full stack developer salary,software developer,software developer salary,it courses,
+    frfront end developeront end developer,front end developer skills,front end developer jobs,graphic design,graphic design courses,
+    programming languages,top programming languages,web development company,web development courses,web development services,python web development
+    ">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+
+    <link href="{% static 'css/Recruitments.css' %}" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <!--using-fontAwesome------------>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/logo/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/logo/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/logo/favicon-16x16.png' %}">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Training & Placement Assistance Courses</title>
+    <style>
+
+
+        @media all and (min-width: 992px) {
+            .navbar .nav-item .dropdown-menu {
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                transition: .3s;
+                margin-top: 0;
+            }
+
+            .navbar .nav-item:hover .nav-link {
+                color: #fff;
+            }
+
+            .navbar .dropdown-menu.fade-down {
+                top: 80%;
+                transform: rotateX(-75deg);
+                transform-origin: 0% 0%;
+            }
+
+            .navbar .dropdown-menu.fade-up {
+                top: 180%;
+            }
+
+            .navbar .nav-item:hover .dropdown-menu {
+                transition: .3s;
+                opacity: 1;
+                visibility: visible;
+                top: 60px;
+                transform: rotateX(0deg);
+            }
+        }
+
+        .dropdown-menu {
+
+            background: rgba(0, 0, 0, 0.9);
+
+        }
+    </style>
+</head>
+<body>
+<div class="fixed-top">
+    <nav class="navbar navbar-expand-lg nav Style">
+        <a class="brand-navbar" href="{% url 'index' %}"><img alt="Responsive image" height="60px"
+                                                              src="{% static 'img/logo.jpg' %}"></a>
+        <button class="navbar-toggler" data-target="#mainMenu" data-toggle="collapse">
+            <span><i class="fas fa-align-right iconStyle"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto navList">
+                <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}"><i class="fas fa-home"></i>HOME<span
+                        class="sr-only">(current)</span></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}"><i class="fas fa-users"></i>Who We Are</a>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i
+                            class="fas fa-cogs"></i>Services</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="{% url 'software_deve' %}">Software Development</a></li>
+                        <li><a class="dropdown-item" href="{% url 'tap' %}">Training and Placement</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Digital_Marketing' %}">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" href="{% url 'full_stack' %}">Full Stack Development with
+                            Crampete</a>
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'training' %}">Campus Recruitment Crash
+                            Courses</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Recruitments' %}">Recruitment</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{% url 'Courses' %}"><i
+                            class="fas fa-atom"></i>Courses</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="{% url 'full_stack_developers' %}">Full Stack Developers</a>
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'Data_science' %}">Data science</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Digital_Market' %}">Digital Market</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Crash_Course' %}">Crash Course</a></li>
+                        <!-- <li><a class="dropdown-item" href="{% url 'Aptitude_Reasoning' %}">Aptitude Reasoning</a></li>
+                        <li><a class="dropdown-item" href=" {% url 'Profile_Preparation' %} ">Profile Preparation</a></li> -->
+                        <!-- <li><a class="dropdown-item" href="{% url 'CV_Building' %} ">CV Building</a></li> -->
+                        <li><a class="dropdown-item" href="{% url 'Mock_Interviews' %} ">Mock Interviews</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="{% url 'ongoing' %}"><i class="fas fa-user-tie"></i>Ongoing
+                        Recruitments</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'clients' %}"><i class="fas fa-briefcase"></i>Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}"><i class="fas fa-phone"></i>Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" href="#"><i
+                            class="fas fa-cogs"></i>More</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="#">Pay Online</a></li>
+                        <li><a class="dropdown-item" href="#">Book Online</a></li>
+                        <!-- <li><a class="dropdown-item" href="Digital-Marketing.html">Digital Marketing</a></li> -->
+
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<section class="demo" style="margin-top:10%">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+                <div class="vertical-tab" role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active" role="presentation"><a aria-controls="home" data-toggle="tab"
+                                                                  href="#Section1"
+                                                                  role="tab">Section 1</a></li>
+                        <li role="presentation"><a aria-controls="messages" data-toggle="tab" href="#Section2"
+                                                   role="tab">Section 2</a></li>
+                        <li role="presentation"><a aria-controls="messages" data-toggle="tab" href="#Section3"
+                                                   role="tab">Section 3</a></li>
+                        <li role="presentation"><a aria-controls="messages" data-toggle="tab" href="#Section4"
+                                                   role="tab">Section 4</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content tabs">
+                        <div class="tab-pane fade in active" id="Section1" role="tabpanel">
+                            <span style="font-size: xx-large;">Extra Marks (Recruitment Done in July 2020)</span>
+                            <p>Virtual recruitment drive for the candidates from your institution for Engineering / MBA
+                                / Arts students of this year 2020</p>
+
+                            <h4>BDE requirements:</h4>
+                            <ul>
+                                <li>Active internet connection</li>
+
+                                <li>3 hr proper talk time & 55-60 connected calls</li>
+
+                                <li>Spare SIM</li>
+
+                                <li>PC / Desktop / Laptop</li>
+
+                                <li>10K stipend for first month and based on performance Fixed 3 Lakhs Per Annum</li>
+
+                            </ul>
+                            <h4>Job Description:</h4>
+
+                            <ul>
+                                <li> New Customer Acquisition</li>
+
+                                <li>Conversion of leads received through various marketing channels</li>
+
+                                <li> Consistently achieve revenue targets in line with teams</li>
+
+                                <li> Understand the customer requirement and pass on insights towards the product based
+                                    on customer interactions
+                                </li>
+
+                                <li>Managing sales to Post sales support activities.</li>
+
+                                <li>Customer Relationship, Market Segmentation and Brand Promotion</li>
+
+                                <li>Product pitching for new customers, Retaining customers, Database collection</li>
+
+                                <li>Converting free app users to paid customers through meetings
+
+                                    and demonstrations
+                                </li>
+
+                                <li>Generate requirement for E learning via Direct sales /Inside sales/b2c/b2b
+                                    activities.
+                                </li>
+
+                                <li>Maintaining relationship with the customers as well as acting as link between the
+                                    clients and the organization and promote smooth experience for the users
+                                </li>
+
+                                <li>Develop and manage efficient networks for Business Development.</li>
+
+
+                            </ul>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="Section2" role="tabpanel">
+
+                            <span style="font-size: x-large;">Amazon(Recruitment Over in July 2020)</span><br>
+
+                            <p>Virtual Customer Service Batch Eligible2018/2019/2020</p>
+                            <p> Job Roles: Customer Service Role</p>
+
+                            <p>Job locations: Coimbatore, Noida and Kolkata</p>
+
+                            <h4>Salary</h4><br>
+
+                            <p>Noida : ₹ 2,17,000 PA to ₹ 3,00,000 PA</p>
+                            <p>Coimbatore and Kolkata : ₹ 1,69,000 PA to ₹ 2,20,000 PA</p>
+
+                            <p>Job Description: We are hiring Virtual Customer Service Associate for Voice and Chat
+                                process at Amazon Development Center (India)</p>
+
+                            <p>We are hiring immediate joiners, candidates located only in the above mentioned locations
+                                are eligible for this opportunity (Candidates from other locations kindly ignore this
+                                job posting)</p>
+
+
+                            <p>Shift: 24*7 Shift (Should be comfortable to work any 9 hours a day including Night shift
+                                with 2 consecutive rotational week offs</p>
+
+                            <h3>Additional Benefits:</h3>
+
+                            <ul>
+                                <li> Zeta Meal Card - INR 1100/month i.e. 13,200/- PA</li>
+
+                                <li>Health insurance benefit 5 LPA</li>
+
+                                <li>Night Shift Allowance - INR 150/Night</li>
+
+                                <li>Overtime Allowance as per company policy</li>
+
+                                <li>Internet Allowance (Only work from home) - up to INR 1250</li>
+
+
+                            </ul>
+
+                            <h4>Eligibility:</h4>
+                            <p>Any UG/PG graduates</p>
+                            <p>Must be fluent in English communication and willing to work in night shift<br>
+
+                                Candidates who have applied in last 3 months and pursuing a regular education are not
+                                eligible.</p>
+
+                            <h2>Batches Accepted: 2018/2019/2020</h2>
+
+                        </div>
+
+
+                        <div class="tab-pane fade" id="Section3" role="tabpanel">
+                            <span style="font-size: x-large;">Goldmansachs</span>
+                            <p>Campus Hiring Program for 2021 Batch (Full Time Role) and 2022 Batch (Internship
+                                Role).</p>
+
+                            <h4>Registration ended on 31/07/2020</h4>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="Section4" role="tabpanel">
+                            <span style="font-size: xx-large;">Virtusa</span>
+
+                            <p>2021 Batch BE/Btech/ MCA- Circuit branch students</p>
+                            <ul>
+                                <li>Track 1 - Data Science</li>
+                                <li>Track 2- Full Stack - Java</li>
+                                <li>Track 3 UI Development</li>
+                            </ul>
+                            <p>Eligible Course & Streams – BE/ Btech/ MCA in circuit branches</p>
+
+
+                            <p>Batches accepted: 2021</p>
+
+                            <p>Pre-placement offers are subject to final presentation</p>
+
+                            ​
+
+                            <h2>Registration Ended on 31-07-2020</h2>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+
+<section class="demo-footer" style="margin-top:10%;">
+
+    <footer>
+
+        <div class="container-fluid" style="background: rgba(0, 0, 0, 0.7)">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 ">
+
+                    <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 " style="margin-top:70px;">
+
+
+                        <img src="{% static 'img/logo.jpg' %}" width="250">
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 class="top-margin" style="color:white;margin-top: 4%">Contact</h2>
+                    <hr class="hr-tag" style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <div class="">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text" style="text-align:center; color: white;">First Floor, House Board Commercial<br>Complex, Maulshri Vihar, Near VIP Road,Raipur (C.G.) -492006</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text" style="text-align:center; color: white;">07714041616</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text" style="text-align:center; color: white;">info@anionstech.com</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 style="color:white;margin-top: 4%"
+                        style="height:2px;border-width:0;color:gray;background-color:gray">Opening Hours</h2>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <p style="color: white"> Monday to Saturday - 10am to 7pm</p>
+
+                    <p style="color: white">Sunday - Closed</p>
+
+
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 style="color:white;margin-top: 4%">Map</h2>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <div class="content">
+
+                        <iframe allowfullscreen=""
+                                aria-hidden="false" frameborder="0" height="auto"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.7810682577572!2d81.69984930586462!3d21.20954632009619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c33030e9b60f%3A0x84d09e54f1b37a21!2sAnion%20Softech%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1609041632180!5m2!1sen!2sin"
+                                style="border:0;"
+                                tabindex="0" width="auto"></iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="contaiter" style="background-color:black">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="social">
+                            <a href="https://www.facebook.com/AnionStech/"><p class="social-font"><span
+                                    class="fab fa-facebook-square"></span></p></a>
+                            <a href="https://linkedin.com/in/anion-softech-2707081a2"><p class="social-font"><span
+                                    class="fab fa-linkedin"></span></p></a>
+                            <a href="https://instagram.com/anion_softech?igshid=110myfr4rra4i"><p class="social-font">
+                                <span class="fab fa-instagram"></span></p></a>
+                            <a href="https://youtube.com/channel/UCRTBQGAlBv1cNUaODhxx-4A"><p class="social-font"><span
+                                    class="fab fa-youtube"></span></p></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 demo21">
+                        <h6 style="color: white;margin-top:5%;margin-left:50%;">@ 2020 Anion Softech .All Rights
+                            Reserved.</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</section>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+</body>
+</html>

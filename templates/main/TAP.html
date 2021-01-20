@@ -1,0 +1,593 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="Html, Css, java, python,best class in raipur for python, full stack developer salary in india,accenture full stack web developer salary,cooding classes,python classes,full stack developer course,
+    full stack developer,what is full stack developer,ull stack developer meaning,java full stack developer,full stack developer salary,software developer,software developer salary,it courses,
+    frfront end developeront end developer,front end developer skills,front end developer jobs,graphic design,graphic design courses,
+    programming languages,top programming languages,web development company,web development courses,web development services,python web development
+    ">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link href="{% static 'css/TAP.css' %}" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/logo/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/logo/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/logo/favicon-16x16.png' %}">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Training and Placement</title>
+    <style>
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="fixed-top">
+    <nav class="navbar navbar-expand-lg nav Style">
+        <a class="brand-navbar" href="{% url 'index' %}"><img alt="Responsive image" height="60px"
+                                                              src="{% static 'img/logo.jpg' %}"></a>
+        <button class="navbar-toggler" data-target="#mainMenu" data-toggle="collapse">
+            <span><i class="fas fa-align-right iconStyle"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto navList">
+                <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}"><i class="fas fa-home"></i>HOME<span
+                        class="sr-only">(current)</span></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}"><i class="fas fa-users"></i>Who We Are</a>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i
+                            class="fas fa-cogs"></i>Services</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="{% url 'software_deve' %}">Software Development</a></li>
+                        <li><a class="dropdown-item" href="{% url 'tap' %}">Training and Placement</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Digital_Marketing' %}">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" href="{% url 'full_stack' %}">Full Stack Development with
+                            Crampete</a>
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'training' %}">Campus Recruitment Crash
+                            Courses</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Recruitments' %}">Recruitment</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{% url 'Courses' %}"><i
+                            class="fas fa-atom"></i>Courses</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="{% url 'full_stack_developers' %}">Full Stack Developers</a>
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'Data_science' %}">Data science</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Digital_Market' %}">Digital Market</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Crash_Course' %}">Crash Course</a></li>
+                        <!-- <li><a class="dropdown-item" href="{% url 'Aptitude_Reasoning' %}">Aptitude Reasoning</a></li>
+                        <li><a class="dropdown-item" href=" {% url 'Profile_Preparation' %} ">Profile Preparation</a></li> -->
+                        <!-- <li><a class="dropdown-item" href="{% url 'CV_Building' %} ">CV Building</a></li> -->
+                        <li><a class="dropdown-item" href="{% url 'Mock_Interviews' %} ">Mock Interviews</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="{% url 'ongoing' %}"><i class="fas fa-user-tie"></i>Ongoing
+                        Recruitments</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'clients' %}"><i class="fas fa-briefcase"></i>Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}"><i class="fas fa-phone"></i>Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i
+                            class="fas fa-cogs"></i>More</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="#">Pay Online</a></li>
+                        <li><a class="dropdown-item" href="#">Book Online</a></li>
+                        <!-- <li><a class="dropdown-item" href="Digital-Marketing.html">Digital Marketing</a></li> -->
+
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<section style="margin-top:5%">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="banner">
+
+                <img class="img12" height="500px" src="{% static 'img/placement.jpg' %}" width="1349px">
+                <div class="content">
+
+                    <h1 class="heading4" style="margin-top:25%;">Training and Placement assistance started for<br>
+                        Campus Recruitment</h1>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="demo-head" style="margin-top:5%;">
+    <div class="container">
+        <h1>Training and Placement</h1>
+    </div>
+</section>
+
+<section id="form" style="margin-top:10%; margin-bottom: 10%">
+
+    <div class="form-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-12">
+                    <div class="form-container">
+                        <h3 class="title">Register Today For Training & Placement</h3>
+                        <form action="#" class="form-horizontal worldForm" method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input class="form-control" name="first_name" placeholder="First Name" required
+                                       type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input class="form-control" name="last_name" placeholder="Last Name" required
+                                       type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input class="form-control" name="email" placeholder="Email" required type="email">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input class="form-control" name="phone" placeholder="Phone Number"
+                                       required type="telephone">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>College Pass Out Year/Fresher/School</label>
+                                <input class="form-control" name="pass_out"
+                                       placeholder="College Pass Out Year/Fresher/School"
+                                       type="text">
+                            </div>
+
+
+                            <!-- <div class="form-group">
+                             <label>College Pass Out Year/Fresher/School</label>
+                             <select class="form-control" id="countrySelect" size="1" onchange="makeSubmenu(this.value)">
+                             <option value="" disabled selected></option>
+                             <option>College</option>
+                             <option>School</option>
+                             <option>Experience</option>
+                             <option>Fresher</option>
+                             </select>
+                            </div>
+
+                            <div class="form-group">
+                             <label>College Pass Out Year/Fresher/School</label>
+                             <select class="form-control" id="citySelect" size="1">
+
+                             </select>
+                            </div> -->
+                            <div class="form-group">
+                                <label>Stream</label>
+
+                                <select class="form-control" name="stream">
+                                    <option value="bsc">BSc</option>
+                                    <option value="mba">MBA</option>
+                                    <option value="mba">BE/BTech, IT</option>
+                                    <option value="mba">BE/BTech Computer</option>
+                                    <option value="mba">BE/BTech Civil</option>
+                                    <option value="mba">BE/BTech Mechanical</option>
+                                    <option value="mba">BE/BTech Electronics</option>
+                                    <option value="mba">BE/BTech ENT</option>
+                                    <option value="mba">BCom</option>
+                                    <option value="mba">MCA</option>
+                                    <option value="mba">Career Counselling</option>
+                                    <option value="mba">6 to 10 std.</option>
+                                    <option value="mba">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- <div class="form-group">
+                              <label>College Pass Out Year/Fresher/School</label>
+                              <select class="form-control" id="countrySelect" size="1" onchange="makeSubmenu(this.value)">
+                              <option value=""disabled selected></option>
+                              <option>Chhatisgarh</option>
+                              <option></option>
+                              <option></option>
+                              <option></option>
+                              </select>
+                             </div>
+
+                             <div class="form-group">
+                              <label>College Pass Out Year/Fresher/School</label>
+                              <select class="form-control" id="citySelect" size="1">
+
+                              </select>
+                             </div>
+
+
+                          <div class="form-group">
+                              <label>City</label>
+                              <select class="form-control" name="city" id="cityList">
+                                  <option value="" selected="selected">Select State</option>
+                              </select>
+                          </div>
+
+                           -->
+                            <div class="form-group">
+                                <label>City</label>
+                                <input class="form-control" name="City" placeholder="City" type="text">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>Comment</label>
+                                <input class="form-control" name="Comment" placeholder="Comments..." type="text">
+                            </div>
+
+
+                            <button class="btn signup" onclick="myFunction()">Register Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section style="margin-top:10%">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+
+                <img class="img-fluid" src="{% static 'img/Slide1_JPG.jpg' %}">
+
+
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+
+                <img class="img-fluid" class="img13" src="{% static 'img/Slide2_edited.jpg' %}">
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section style="margin-top: 10%">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <div class="h2 post">
+                    <h1>Training Courses & Duration</h1>
+                </div>
+                <p class="post">Our training programs are designed and developed according to the industry needs and
+                    trends, to equip future workforce with the real-time on-floor job responsibilities to experience
+                    firsthand work culture in corporates. From 45-days to 6-months, our training programs will make you
+                    job-ready with all the necessary skills and knowledge.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="testimonial-section2" style="margin-top: 10%">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12    ">
+                <div class="testim" id="testim">
+
+                    <!--         <div class="testim-cover"> -->
+                    <div class="wrap">
+
+                        <span class="arrow right fa fa-chevron-right" id="right-arrow"></span>
+                        <span class="arrow left fa fa-chevron-left " id="left-arrow"></span>
+                        <ul class="dots" id="testim-dots">
+                            <li class="dot active"></li><!--
+                    -->
+                            <li class="dot"></li><!--
+                    -->
+                            <li class="dot"></li><!--
+                    -->
+                            <li class="dot"></li><!--
+                    -->
+                            <li class="dot"></li><!--
+                    -->
+                            <li class="dot"></li>
+                        </ul>
+                        <div class="cont" id="testim-content">
+                            <div class="active">
+                                <div class="img"><img alt="" src="{% static 'img/demo-img1.png' %}"></div>
+                                <div class="h4" style="font-weight:bold;">Major/Minor Project</div>
+                                <p class="post">In today’s hyperconnected world, organizations are challenged in more
+                                    ways than ever to stay ahead of the curve. This comprehensive service is designed to
+                                    fit your unique needs without disrupting productivity or workflow. With our
+                                    end-to-end solutions, Engage IT is sure to help your organization succeed.</p>
+                            </div>
+
+                            <div>
+                                <div class="img"><img alt="" src="{% static 'img/img-demo2.png' %}"></div>
+                                <div class="h4" style="font-weight:bold;">Certificate Courses</div>
+                                <p class="post">AngularJS, Graphic & Web Design, MBA-HR/Marketing, iPhone, Android,
+                                    .NET, PHP, Java, Quality Assurance, Magento</p>
+                            </div>
+
+                            <div>
+                                <div class="img"><img alt="" src="{% static 'img/demo-img3.png' %}"></div>
+                                <div class="h4" style="font-weight:bold;">Electrical Design Course</div>
+                                <p class="post">Basic Electrical, Electronics and Instrumentation Engineering/ PLC,
+                                    SCADA, HMI/ Drive, Electrical CAD, EPLAN/ Wire Harness with CATIA v5 / Robot
+                                    programming / Lab view etc</p>
+                            </div>
+
+                            <div>
+                                <div class="img"><img alt="" src="{% static 'img/demo-img4.png' %}"></div>
+                                <div class="h4" style="font-weight:bold;">Civil Design Course</div>
+                                <p class="post">Basic Civil Engineering / Revit Architecture/ AutoCAD Civil/ Staad Pro/
+                                    3DS max/ E-Tabs / SAFE / Google Sketch Up etc.</p>
+                            </div>
+
+                            <div>
+                                <div class="img"><img alt="" src="{% static 'img/demo-img5.png' %}"></div>
+                                <div class="h4" style="font-weight:bold;">Mechanical Design Course</div>
+                                <p class="post">Basic mechanical engineering (Engineering drawings and Symbols, SOM,
+                                    TOM, GD&T, Tolerance & Fits) / AutoCAD/ Any one domain out of Sheet
+                                    metal/Plastics/BIW ,Catia, SolidWorks, UG-NX etc.</p>
+                            </div>
+                            <div>
+                                <div class="img"><img alt="" src="{% static 'img/demo-img6.png' %}"></div>
+                                <div class="h4" style="font-weight:bold;">Personality Development/ Soft Skills/ Aptitude
+                                    & Technical
+                                </div>
+                                <p class="post">Be job ready with our crash pre and post placement courses.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section style="margin-top:10%">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+
+                <img class="img-fluid" src="{% static 'img/job.jpg' %}">
+
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+
+                <h1 class="post post5">Placement Highlights</h1>
+                <br>
+
+                <h4 class="post">Efficient. Secure. Reliable</h4>
+                <br>
+                <ul class="post">
+                    <li>Training on SDLC / Agile-Scrum right from SRS Creation to Testing</li>
+                    <br>
+                    <li>Training imparted by professional developers with 5+ years of experience</li>
+                    <br>
+                    <li>Individual computer assigned to each student.</li>
+                    <br>
+                    <li>Well-stocked library and training material.</li>
+                    <br>
+                    <li>Project Workshops conducted by Project Heads.</li>
+                    <br>
+                    <li>Project Viva Preparation.</li>
+                    <br>
+                    <li>Quizzes, Seminars, Workshops and Cultural Activities conducted.</li>
+                    <br>
+                    <li>Soft Skill Training by experts to enhance Interview , Resume Writing Skills, GD’s.</li>
+                    <br>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+
+<section style="margin-top: 10%">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 ">
+                <video controls height="240" width="320">
+                    <source src="{% static 'video/Training-Demo.mp4' %}" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="post">Training Demo Aptitude - Anion Softech</p>
+            </div>
+            <div class="col-lg-4">
+                <video controls height="240" width="320">
+                    <source src="{% static 'video/Training-Demo1.mp4' %}" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="post">Training Demo Gateway to Tcs By Anion Softech</p>
+            </div>
+            <div class="col-lg-4">
+                <video controls height="240" width="320">
+                    <source src="{% static 'video/Training-Demo2.mp4' %}" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="post">Training Demo Resume Writing Anion Softech</p>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<section class="demo-footer" style="margin-top:10%;">
+
+    <footer>
+
+        <div class="container-fluid" style="background: rgba(0, 0, 0, 0.7)">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 ">
+                    <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 " style="margin-top:70px;">
+
+
+                        <img src="{% static 'img/logo.jpg' %}" width="250">
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 class="top-margin" style="color:white;margin-top: 4%">Contact</h2>
+                    <hr class="hr-tag" style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <div class="">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text" style="text-align:center; color: white;">First Floor, House Board Commercial<br>Complex, Maulshri Vihar, Near VIP Road,Raipur (C.G.)-492006</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text" style="text-align:center; color: white;">07714041616</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text" style="text-align:center; color: white;">info@anionstech.com</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 style="color:white;margin-top: 4%"
+                        style="height:2px;border-width:0;color:gray;background-color:gray">Opening Hours</h2>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <p style="color: white"> Monday to Saturday - 10am to 7pm</p>
+
+                    <p style="color: white">Sunday - Closed</p>
+
+
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 style="color:white;margin-top: 4%">Map</h2>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <div class="content">
+
+                        <iframe allowfullscreen=""
+                                aria-hidden="false" frameborder="0" height="auto"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.7810682577572!2d81.69984930586462!3d21.20954632009619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c33030e9b60f%3A0x84d09e54f1b37a21!2sAnion%20Softech%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1609041632180!5m2!1sen!2sin"
+                                style="border:0;"
+                                tabindex="0" width="auto"></iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="contaiter" style="background-color:black">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="social">
+                            <a href="https://www.facebook.com/AnionStech/"><p class="social-font"><span
+                                    class="fab fa-facebook-square"></span></p></a>
+                            <a href="https://linkedin.com/in/anion-softech-2707081a2"><p class="social-font"><span
+                                    class="fab fa-linkedin"></span></p></a>
+                            <a href="https://instagram.com/anion_softech?igshid=110myfr4rra4i"><p class="social-font">
+                                <span class="fab fa-instagram"></span></p></a>
+                            <a href="https://youtube.com/channel/UCRTBQGAlBv1cNUaODhxx-4A"><p class="social-font"><span
+                                    class="fab fa-youtube"></span></p></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 demo21">
+                        <h6 style="color: white;margin-top:5%;margin-left:50%;">@ 2020 Anion Softech .All Rights
+                            Reserved.</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+</section>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<script crossorigin="anonymous"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<script crossorigin="anonymous"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<script src="{% static 'js/script.js' %}"></script>
+
+<script>
+    function myFunction() {
+        alert("Successfully");
+    }
+</script>
+</body>
+</html>
